@@ -4,17 +4,12 @@ from rest_framework import status, generics, mixins, viewsets
 
 from django.shortcuts import get_object_or_404
 
-from cinema.models import (
-    Genre,
-    Actor,
-    CinemaHall,
-    Movie
-)
+from cinema.models import Genre, Actor, CinemaHall, Movie
 from cinema.serializers import (
     GenreSerializer,
     ActorSerializer,
     CinemaHallSerializer,
-    MovieSerializer
+    MovieSerializer,
 )
 
 
